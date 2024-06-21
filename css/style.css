@@ -1,0 +1,192 @@
+:root{
+    --main-color:rgb(56, 56, 56);
+    --min-height-mid: 700px;
+    --main-bg-color:RGB(25,25,25);
+}
+
+body{
+    width: 100%;
+    min-height: 960px;
+    overflow-x: hidden;
+}
+
+.TodoJs-App{
+    background-color: var(--main-bg-color);
+    width: 100%;
+    min-height: 960px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* описание верха*/
+
+.App-top{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.App-add_todo{
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#add_todo-title{
+    color: whitesmoke;
+}
+
+.add_todo-form{
+    width: 100%;
+}
+.add_todo_form{
+    padding: 10px;
+    background-color: var(--main-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.add_todo_form>input#add_todo_form-input{
+    width: 80%;
+}
+
+/* описание центра*/
+
+.App-mid{
+    background-color: var(--main-color);
+    width: 100%;
+    min-height: var(--min-height-mid);
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App-check_todo{ 
+    min-height: var(--min-height-mid);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.check_todo-checkall{
+    margin-top:15px ;
+}
+
+dl.check_todo-dl{
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 500px;
+    height: 90%;
+    width: 100%;
+}
+
+.check_todo-showlist{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.showlist-item{
+    color: white;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+.showlist-item:hover{
+    background-color: rgb(128, 126, 126);
+}
+
+/* описание пункта в списке*/
+
+.li_hidden{
+    display: none !important;
+}
+li.check_todo_line{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: RGB(44,45,47);
+}
+.check_todo_line-text{
+    display: flex;
+    background-color: aqua;
+
+}
+.check_todo_line-notshow{
+    display: none !important;
+}
+.text_text-hidden{
+    display: none !important;
+}
+.text-text{
+    overflow: auto;
+    overflow-wrap: anywhere;
+}
+
+li.check_todo_line:last-child{
+    border-radius: 0 0 15px 15px;
+}
+li.check_todo_line:first-child{
+    border-radius: 15px 15px 0 0 ;
+}
+
+li.check_todo_line{
+    height: 100%;
+}
+
+li.check_todo_line>div.check_todo_line-text{
+    align-items: center;
+    background-color: white;
+    width: 80%;
+}
+
+.check_todo_line-text_input{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.check_todo_line-checkbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input.check_todo_line-checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.Active{
+    background-color: var(--main-bg-color);
+}
+/* описание низа*/
+
+.App-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+}
+.App-pagination{
+    color: white;
+}
+.App-pagination_btn-active{
+    background-color: black;
+    color: white;
+}
+.btn-secondary:hover{
+    background-color: var(--main-bg-color);
+}
